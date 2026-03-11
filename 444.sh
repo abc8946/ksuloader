@@ -1,0 +1,1 @@
+grep -f ./symbol /proc/kallsyms | awk '{print $3 " = 0x" $1 ";"}'  > lacksym.ld && sysctl kernel.kptr_restrict=1
