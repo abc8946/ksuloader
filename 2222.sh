@@ -1,1 +1,1 @@
-ld -T -r lacksym.ld -o out.ko kernel.ko
+ld -r -T lacksym.ld -o out.ko kernel.ko
